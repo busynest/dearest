@@ -1,0 +1,113 @@
+/*	3.  Pages
+/* -------------------------------------------------------------------------- */
+
+
+/*		a. Home
+/* -------------------------------------------------------------------------- */
+
+.home {
+    .header {
+        background: transparent;
+    }
+    .hentry {
+        margin-top: 0;
+    }
+    .entry-header {
+        display: none;
+    }
+    .entry-content {
+        margin-top: 0;
+    }
+}
+
+.hero--home {
+    margin-top: -110px!important;
+}
+
+.header--offset {
+    &__text {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    @media (min-width: 601px) {
+        &__title {
+            margin-left: 5.0rem;
+            margin-bottom: -10.5rem;
+            span {
+                font-size: 2.2rem;
+            }
+        }
+        &__text {
+            //background-color: rgba(255, 255, 255, 0.8);
+            padding: 8rem 6rem 2rem 4rem;
+            margin-right: 0;
+            margin-left: auto;
+            width: 80%;
+        }
+        .wp-block-media-text__media {
+            margin-left: -1.5rem;
+            max-width: 80%;
+        }
+        .wp-block-media-text__content {
+            margin-right: -1.5rem;
+            padding: 0;
+        }
+        &__button {
+            margin-top: -6.7rem;
+            margin-right: 2rem;
+        }  
+    }
+    @media (max-width: 600px) { 
+        .wp-block-media-text__media {
+            grid-row: 1;
+        }
+        .wp-block-media-text__content {
+            grid-row: 2;
+        }
+        &__button { 
+            text-align: center;
+            margin-top: 4rem;
+            margin-right: auto;
+            //margin-bottom: 4rem;
+            margin-left: auto;
+            float: none;
+        }
+    }
+}
+
+
+/*      a. Product
+/* -------------------------------------------------------------------------- */
+
+.product {
+    max-width: 108rem;
+    margin: 0 auto;
+}
+
+.woocommerce-product-gallery {
+
+    &__image:first-child() {
+        margin-bottom: 2rem;
+    }
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: $color--text-grey;
+    font-size: 1.25em;
+}
+
+.flex-viewport {
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

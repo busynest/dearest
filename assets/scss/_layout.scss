@@ -1,0 +1,137 @@
+/*	1. Layout
+/* -------------------------------------------------------------------------- */
+
+
+/*		a. Grid
+/* -------------------------------------------------------------------------- */
+
+
+.section {
+    padding: 8rem 0;
+    @include viewport--3 {
+        padding: 5rem 0;
+    }  
+}
+
+.container {
+	width: 100%;	
+    max-width: 108rem;
+    margin: 0 auto;
+    @include viewport--6 {
+        padding: 5.6rem 0;
+    }  
+    &--small {
+	    max-width: 64rem;
+	}
+	&--full {
+	    max-width: 100%;
+	}
+}
+
+.grid {
+    &--col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .entry-content > .alignwide {
+        max-width: 108rem;
+        width: 108rem;
+    }
+}
+
+@media (min-width: 1080px) {
+    .entry-content > .alignwide {
+        max-width: 108rem;
+        width: 108rem;
+    }
+}
+
+.no-margin {
+    margin: 0 auto;
+}
+
+.no-margin--left {
+    margin-left: 0;
+}
+
+.padding--left-40 {
+    padding-left: 4rem;
+} 
+
+
+/*		b. Header
+/* -------------------------------------------------------------------------- */
+
+.admin-bar .header {
+    //margin-top: 32px;
+}
+
+.header {
+    background: $color--text;
+    position: relative;
+    z-index: 2;
+}
+
+ul.sub-menu {
+    li {
+        a {
+            padding: 2rem;
+        }
+    }
+}
+
+.header--horizontal {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-branding {
+        text-align: center;
+        margin: 0 0;
+        .custom-logo-link {
+            max-width: 200px;
+      }
+
+    }
+
+    .site-title, .site-description {
+        display: none;
+        margin: 0;
+    }
+
+    .main-navigation {
+      clear: both;
+      display: block;
+      margin: 0;
+      max-width: 580px;
+      text-align: center; 
+
+    }
+
+    a {
+        color: #fff;
+        font-weight: 700;
+    }
+
+}
+
+/*		c. Footer
+/* -------------------------------------------------------------------------- */
+
+
+
+/*      d. Events
+/* -------------------------------------------------------------------------- */
+
+.tribe-events .tribe-events-header {
+    display: none;
+}
+
+.tribe-events .tribe-events-calendar-list__month-separator {
+    display: none;
+}

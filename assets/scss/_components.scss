@@ -1,0 +1,408 @@
+/*	1. Components
+/* -------------------------------------------------------------------------- */
+
+/*      aa. Color
+/* -------------------------------------------------------------------------- */
+
+.has-primary-color {
+    color: $color--primary;
+}
+
+.has-primary-background-color {
+    background-color: $color--primary;
+}
+
+
+/*		a. Buttons
+/* -------------------------------------------------------------------------- */
+
+
+button {    
+    font-family: $font--heavy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.08em;
+    padding: 1.8rem 3rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: $color--primary;
+    border: 2px solid $color--primary;
+    border-radius: 2.8rem;
+}
+
+.button {
+    font-family: $font--heavy;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.08rem;
+    padding: 1.8rem 3rem;
+    min-width: 16rem;
+    text-decoration: none;
+    color: #fff;  
+    background-color: $color--primary;
+    border: 0.2rem solid $color--primary;
+    border-radius: 2.8rem;
+    font-weight: 400;
+    &--primary {
+        color: #fff;  
+        background-color: $color--primary;
+        border: 0.2rem solid $color--primary;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &--secondary {
+        color: $color--primary;
+        background-color: #fff;
+        border: 0.2rem solid $color--primary;
+    }
+    &--tertiary {
+        color: #fff;
+        background-color: $color--text;
+        border: 0.2rem solid $color--text;
+    }    
+    &--footer {
+        color: #fff;  
+        background-color: $color--primary!important;
+        border: 0.1rem solid #fff;
+    }
+}
+
+.wp-block-button a {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+    padding: 1.8rem 3rem; 
+    min-width: 16rem;
+    border: 0.2rem solid $color--primary;
+ 
+}
+
+
+/*      b. Menus
+/* -------------------------------------------------------------------------- */
+
+
+.modal-menu > li > a,
+.modal-menu > li > .ancestor-wrapper > a {
+    font-size: 1.6rem;
+}
+
+.menu-modal-inner {
+    background: $color--primary;
+}
+
+.modal-menu {
+
+    font-family: Nexa-Bold;
+    text-transform: uppercase;
+    li {
+        background: $color--primary;
+        a {
+
+        }
+    }
+    a {
+        color: #fff;
+    }
+}
+
+/*      c. Forms
+/* -------------------------------------------------------------------------- */
+
+
+input[type=text] {
+    border: 0;
+    border-radius: 0;
+    background: #eaeaf9;
+    font-family: AvenirLTPro-Roman;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+    text-transform: lowercase;
+    color: $color--primary;
+}
+
+input[type=email] {
+    border: 0;
+    border-radius: 0;
+    background: #eaeaf9;
+    font-family: AvenirLTPro-Roman;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+    text-transform: lowercase;
+    color: $color--primary;
+}   
+
+input[type=submit] {
+    text-decoration: none;
+}
+
+input[type="button"], input[type="reset"], input[type="submit"] {
+    font-family: $font--heavy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: $color--primary;
+    border: 2px solid $color--primary;
+    border-radius: 2.4rem;
+}
+
+.formkit-field {
+    margin: 0 auto;
+    max-width: 240px;
+    margin-bottom: 20px;   
+}
+
+.form--newsletter {
+    input[type=text], input[type=email] {
+        font-size: 14px;
+        line-height: 21px;
+        max-width: 240px;
+        text-align: center;
+    }
+    button {
+        margin: auto;
+        display: block;           
+    }
+}
+
+.form--contact {
+    input[type=text] {
+        font-size: 30px;
+        line-height: 41px;
+    }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $color--primary;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: $color--primary;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: $color--primary;
+}
+
+::placeholder {
+  color: $color--primary;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: $color--primary;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: $color--primary;
+}
+
+
+/*      d. Navigation
+/* -------------------------------------------------------------------------- */
+
+
+.query__navigation {
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem 0;
+    .page-numbers {
+        font-family: $font;
+        color: $color--primary;
+        font-size: 1.6rem;
+        text-decoration:none;
+        display: block;
+        text-align: center;
+        line-height: 2;
+        background-color: $color--primary-light;
+        cursor: pointer;
+        padding: 1rem 0;
+        width: 5rem;
+        height: 5rem;
+        @include viewport--3 {
+            background-color: transparent;
+            font-size: 1.2rem;
+            width: 4rem;
+            height: 4rem;
+        }
+        &.current {
+            background-color: $color--primary;
+            color: #fff;
+        }
+        &.prev {
+            width: 16rem;
+            @include viewport--3 {
+                width: 8rem;
+            }
+        }
+        &.next {
+            width: 16rem;
+            @include viewport--3 {
+                width: 8rem;
+            }                
+        }           
+        &.dots {
+            background-color: transparent;
+        }
+    }
+    @include viewport--3 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    ul {
+        margin: 0 0 3rem 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/*		e. Misc
+/* -------------------------------------------------------------------------- */
+
+
+.background--gradient {
+    text-align: center;
+    padding: 100px 0;
+    background: url('/wp-content/themes/natalie-miles/assets/waves-rainbows/rainbow-gradient.jpg') no-repeat;
+    background-size: cover;
+    p, h1, h2, h3 {
+       color: #fff;       
+    }
+    p {
+        margin-top: 3rem;
+        @include viewport--3 {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+    }
+}
+
+.feature--offset-image-border {
+    position: relative;
+    gap: 8rem;
+    max-width: 100rem;
+    &--reverse {
+        @media (max-width: 600px) {
+            .wp-block-media-text__media {
+                grid-row: 1;
+            }
+            .wp-block-media-text__content {
+                grid-row: 2;
+            }
+        }
+    }
+    .wp-block-media-text__media {
+        position: relative;
+        z-index: 1;
+        &>img {
+            position: relative;
+            z-index: 3;
+        }
+        &:after {
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            content: "";
+            display: block;
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            border-style: solid;
+            border-width: 8px 8px 8px 8px;
+            -moz-border-image: url('/wp-content/uploads/feature__border.png') 10 10 10 10 stretch stretch;
+            -webkit-border-image: url('/wp-content/uploads/feature__border.png') 10 10 10 10 stretch stretch;
+            -o-border-image: url('/wp-content/uploads/feature__border.png') 10 10 10 10 stretch stretch;
+            border-image: url('/wp-content/uploads/feature__border.png') 10 10 10 10 stretch stretch;
+        }
+    }
+}
+
+/*      e.1 Posts
+/* -------------------------------------------------------------------------- */
+
+.post {
+    .entry-header .wp-post-image {
+        margin-bottom: 0; 
+        object-fit: cover;
+    }
+}
+
+.archive {
+   .post {
+        .entry-header .wp-post-image {
+            height: 200px; 
+        }
+    }
+}
+
+.post {
+    &__display {
+        
+    }
+    &__button {
+
+    }
+    &__image {
+
+    }
+    &__main {
+
+    }
+    &__header {
+
+    }
+    &__title {
+
+    }
+    &__label {
+
+    }
+    &__price {
+
+    }
+    &__specs {
+
+    }
+    .spec {
+        &__icon {
+
+        }
+        &__description {
+
+        }
+        &__title {
+
+        }
+        &__value {
+
+        }
+    }
+}
+
+
+
+

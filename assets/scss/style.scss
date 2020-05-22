@@ -1,0 +1,39 @@
+/*
+ Theme Name:   Redbrickreative Starter
+ Theme URI:    https://redbrickreative.com
+ Description:  Redbrickreative's Starter Theme
+ Author:       Greg Slonina
+ Author URI:   https://redbrickreative.com
+ Template:     gutenberg-starter-theme
+ Version:      1.0.0
+ Text Domain:  redbrickreative-starter
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	Base
+		a. Variables
+		b. Mixins
+		c. Typography
+	1. 	Layout
+		a. Grid
+		b. Header
+		c. Footer
+	2. 	Components
+		a. Buttons 
+		b. Menus 
+		c. Forms 
+		d. Widgets
+	3. 	Pages
+
+----------------------------------------------------------------------------- */
+
+@import '_base';
+
+@import '_layout';
+
+@import '_components';
+
+@import '_pages';
